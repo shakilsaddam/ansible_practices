@@ -1,7 +1,7 @@
 Step-by-step Instructions: Ansible - how to connect to windows ansible host?
 ============================================================================
 
-Windows Part(client side)
+Client Node (Windows Part)
 -------------------------
 1. Download the script from here: https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1
 2. Once you donwload the ConfigureRemotingForAnsible.ps1 file the following command from command line should do the job:
@@ -18,9 +18,9 @@ set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 Link: https://www.c-sharpcorner.com/article/how-to-fix-ps1-can-not-be-loaded-because-running-scripts-is-disabled-on-this-sys/
 
 
-Ansible Server Part:
---------------------
-Ansible is already installed in our ubuntu server.
+Control Node (Ubuntu Server Part):
+----------------------------------
+Ansible is already installed in our ubuntu server and client nodes are reachable from the ubuntu server.
 
 1. ansible.windows.win_updates module – Download and install Windows updates
 ```
