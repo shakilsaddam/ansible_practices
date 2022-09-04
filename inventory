@@ -1,0 +1,11 @@
+[windows_client_nodes]
+192.168.50.192
+
+[meeting-laptop:vars]
+ansible_user=************
+ansible_password="**********"
+ansible_connection=winrm
+ansbile_ssh_port=5986
+#ansible_winrm_transport: ntlm
+#ansible_winrm_transport: basic
+ansible_winrm_server_cert_validation=ignore
